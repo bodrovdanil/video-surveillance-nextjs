@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .custom-button {
+    width: 250px; 
+    height: 50px; 
+    background-color: #00C5DE;
+    color: #FFFFFF; 
+    border-radius: 60px;
+}
+}
