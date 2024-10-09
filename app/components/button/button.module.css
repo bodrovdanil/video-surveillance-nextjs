@@ -1,0 +1,6 @@
+.button_outline {
+    @apply w-[240px] h-[44px] rounded-[61px] bg-smoky-white text-blackbirds-egg border-blackbirds-egg border ml-[66px]
+};
+.button_filled {
+    @apply w-[249px] h-[49px] rounded-[60px] bg-blackbirds-egg text-white
+};

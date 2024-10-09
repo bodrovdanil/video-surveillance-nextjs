@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from './button/button';
 
 const Header = () => {
     return (
-        <header className="bg-smoky-white w-full h-[80px] fixed top-0 flex items-center justify-center px-10 shadow-md font-normal text-[16px]">
+        <header className="bg-smoky-white w-full h-[80px] fixed z-20 top-0 flex items-center justify-center px-10 shadow-md font-normal text-[16px]">
                 <Image 
                     src="/images/logo.png" 
                     alt="Logo" 
@@ -18,8 +19,7 @@ const Header = () => {
                     <Link href="/about">О НАС</Link>
                     <Link href="/contacts">КОНТАКТЫ</Link>
                 </nav>
-            <button className="w-custom-button-width h-custom-button-height rounded-[60px] ml-[66px] px-4 py-2
-            bg-smoky-white text-blackbirds-egg border">ОТПРАВИТЬ ЗАЯВКУ</button>
+            <Button variant="outline">ОТПРАВИТЬ ЗАЯВКУ</Button>
         </header>
     );
 };

@@ -1,8 +1,10 @@
+import Home_screen from "./components/Home_screen";
+import Possibilities from "./components/possibilities/Possibilities";
 const HomePage = () => {
   return (
-    <div className="p-5">
-      <h1 className="text-2xl">Главная страница</h1>
-      <p>Контент Вашей страницы здесь.</p>
+    <div className="p-0">
+      <Home_screen />
+      <Possibilities />
     </div>
   );
 };

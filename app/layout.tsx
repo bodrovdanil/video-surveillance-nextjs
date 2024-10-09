@@ -13,7 +13,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <html>
       <body>
         <Header />
-        <main className="pt-20">{children}</main>
+        <main className="pt-16">{children}</main>
       </body>
     </html>
   );
