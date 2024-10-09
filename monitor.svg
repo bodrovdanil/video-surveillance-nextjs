@@ -1,0 +1,11 @@
+<svg width="81px" height="81px" viewBox="0 0 81 81" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Пунктирный бордюр -->
+  <circle cx="40.5" cy="40.5" r="40" stroke="#00C5DE" stroke-width="1" fill="none" stroke-dasharray="6, 5"/>
+
+  <!-- Круг -->
+  <circle cx="40.5" cy="40.5" r="33.5" fill="#00C5DE"/>
+
+  <!-- Иконка 31 на 32 px, размещенная по центру -->
+  <image href="https://raw.githubusercontent.com/bodrovdanil/video-surveillance-nextjs/3605fe205c7e2d0bef38a00b91f9bb5d374860d0/monitor%201.svg" x="25" y="24.5" width="31" height="32" />
+</svg>
