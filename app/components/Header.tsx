@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Button from './button/button';
+import Button from './Button/Button';
 
 const Header = () => {
     return (

@@ -1,9 +1,9 @@
-import Home_screen from "./components/Home_screen";
-import Possibilities from "./components/possibilities/Possibilities";
+import HomeScreen from "./components/HomeScreen";
+import Possibilities from "./components/Possibilities/Possibilities";
 const HomePage = () => {
   return (
     <div className="p-0">
-      <Home_screen />
+      <HomeScreen />
       <Possibilities />
     </div>
   );

@@ -1,10 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Button from './button/button';
-const Home_screen = () => {
+import Button from './Button/Button';
+const HomeScreen = () => {
     return (
-        <div className="h-screen bg-cover bg-center inset-x-0 top-0" style={{ backgroundImage: "url('/images/home-page.png')"}}>
-            <div className='flex justify-center '>
+        <div className="h-screen bg-cover bg-center inset-x-0 top-0" style={{ backgroundImage: "url('/images/homePage.png')" }}>
+            <div className='flex justify-center'>
                 <h1 className='w-[923px] h-[170px] mt-[125px] text-[58px] leading-[77px] text-center text-blackbirds-egg font-medium'>Проектирование и установка систем видеонаблюдения</h1>
             </div>
             <div className='flex justify-center'>
@@ -14,8 +12,8 @@ const Home_screen = () => {
                 <Button variant="filled">УЗНАТЬ БОЛЬШЕ</Button>
             </div>
         </div>
-        
+
     );
 };
 
-export default Home_screen;
+export default HomeScreen;
