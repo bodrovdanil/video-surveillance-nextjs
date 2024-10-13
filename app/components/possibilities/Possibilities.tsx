@@ -8,6 +8,7 @@ interface Possibilities {
     subtitle: string;
 }
 
+
 const Possibilities = () => {
     return (
         <div className="w-full text-center py-16">
