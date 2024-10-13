@@ -12,14 +12,14 @@ const Header = () => {
                     height={48} 
                     className="mr-[65px]" 
                 />
-                <nav className="flex space-x-[38px] text-dim-gray">
-                    <Link href="/services">НАШИ УСЛУГИ</Link>
-                    <Link href="/articles">СТАТЬИ</Link>
-                    <Link href="/info">ИНФОРМАЦИЯ</Link>
-                    <Link href="/about">О НАС</Link>
-                    <Link href="/contacts">КОНТАКТЫ</Link>
+                <nav className="flex space-x-[38px] text-dim-gray uppercase">
+                    <Link href="/services">наши услуги</Link>
+                    <Link href="/articles">статьи</Link>
+                    <Link href="/info">информация</Link>
+                    <Link href="/about">о нас</Link>
+                    <Link href="/contacts">контакты</Link>
                 </nav>
-            <Button variant="outline">ОТПРАВИТЬ ЗАЯВКУ</Button>
+            <Button variant="outline">отправить заявку</Button>
         </header>
     );
 };

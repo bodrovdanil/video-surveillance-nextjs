@@ -9,7 +9,7 @@ const HomeScreen = () => {
                 <h4 className='text-center align-bottom text-[24px] leading-[77px] text-dim-gray font-normal'>Защитите свой бизнес от неожиданных сбоев!</h4>
             </div>
             <div className='flex justify-center'>
-                <Button variant="filled">УЗНАТЬ БОЛЬШЕ</Button>
+                <Button variant="filled">узнать больше</Button>
             </div>
         </div>
 

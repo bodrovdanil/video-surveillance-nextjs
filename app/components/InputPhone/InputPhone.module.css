@@ -1,0 +1,15 @@
+.inputContainer {
+    @apply w-[373px] min-w-[200px];
+}
+
+.relatives {
+    @apply relative;
+}
+
+.icon {
+    @apply absolute inset-y-0 left-0 flex items-center pl-6;
+}
+
+.inputField {
+    @apply w-full bg-white/20 placeholder:text-lavender-blue text-blackbirds-egg text-[16px] rounded-[60px] pl-[53px] py-3 focus:outline-none;
+}

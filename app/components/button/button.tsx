@@ -6,9 +6,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button = ({ variant, children, ...props }: ButtonProps) => {
-    // Определяем класс в зависимости от варианта кнопки
     const buttonClass = variant === 'filled' ? styles.buttonFilled : styles.buttonOutline;
-
     return (
         <button className={buttonClass} {...props}>
             {children}
