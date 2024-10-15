@@ -1,6 +1,7 @@
 .buttonOutline {
     @apply w-[240px] h-[44px] rounded-[61px] bg-smoky-white text-blackbirds-egg border-blackbirds-egg border ml-[66px]
 };
+
 .buttonFilled {
     @apply w-[249px] h-[49px] rounded-[60px] bg-blackbirds-egg text-white
 };
