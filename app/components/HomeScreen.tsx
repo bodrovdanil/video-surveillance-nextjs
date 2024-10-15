@@ -1,4 +1,4 @@
-import Button from './Button/Button';
+import Button from './utton/utton';
 const HomeScreen = () => {
     return (
         <div className="h-screen bg-cover bg-center inset-x-0 top-0" style={{ backgroundImage: "url('/images/homePage.png')" }}>

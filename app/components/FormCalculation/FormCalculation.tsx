@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import InputPhone from '../InputPhone/InputPhone';
-import Button from '../Button/Button';
+import Button from '../utton/utton';
 
 const FormCalculation = () => {
     return (
