@@ -28,15 +28,6 @@ const config: Config = {
         'signal-black': '#2B2B2B',
         'blue-red': '#0E092A',
       },
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-      },
-      fontWeight: {
-        light: '300',
-        normal: '400',
-        medium: '700',
-        bold: '800',
-      },
     },
   },
   plugins: [],

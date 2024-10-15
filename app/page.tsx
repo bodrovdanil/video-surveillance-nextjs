@@ -1,3 +1,4 @@
+import FormCalculation from "./components/FormCalculation/FormCalculation";
 import HomeScreen from "./components/HomeScreen";
 import Possibilities from "./components/Possibilities/Possibilities";
 import SecurityCameras from "./components/SecurityCameras/SecurityCameras";
@@ -8,6 +9,7 @@ const HomePage = () => {
       <HomeScreen />
       <Possibilities />
       <SecurityCameras />
+      <FormCalculation />
     </div>
   );
 };

@@ -4,7 +4,3 @@
 .buttonFilled {
     @apply w-[249px] h-[49px] rounded-[60px] bg-blackbirds-egg text-white
 };
-.buttonFilled,
-.buttonOutline {
-    text-transform: uppercase;
-}
