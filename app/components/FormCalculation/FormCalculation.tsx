@@ -4,10 +4,10 @@ import Button from '../Button/Button';
 
 const FormCalculation = () => {
     return (
-        <div className='flex justify-center w-full h-screen'>
-            <div className='relative w-[1140px] h-[141px] rounded-[20px] bg-blue-red shadow-xl flex flex-col'>
+        <div className='relative flex justify-center w-full z-10'>
+            <div className='absolute top-[-70px] w-[1140px] h-[141px] rounded-[20px] bg-blue-red shadow-xl flex flex-col'>
                 <Image src="/images/Form.png" alt='form' width={1140} height={141} className='rounded-[20px]' />
-                <div className='flex items-center justify-start absolute  left-[68px] w-full'>
+                <div className='flex items-center justify-start absolute left-[68px] w-full'>
                     <div className='mt-10 mr-7 w-[23px] h-[23px] bg-blackbirds-egg rounded-full'></div>
                     <div className='mt-[26px] w-[366px] h-[87px]'>
                         <p className='text-[20px] leading-7 font-normal text-white'>
@@ -27,5 +27,3 @@ const FormCalculation = () => {
 };
 
 export default FormCalculation;
-
-

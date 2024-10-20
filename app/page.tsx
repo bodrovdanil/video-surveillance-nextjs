@@ -8,8 +8,8 @@ const HomePage = () => {
     <div className="p-0">
       <HomeScreen />
       <Possibilities />
-      <SecurityCameras />
       <FormCalculation />
+      <SecurityCameras />
     </div>
   );
 };
