@@ -15,7 +15,6 @@ export const metadata: Metadata = {
   description: "Проектирование и установка систем видеонаблюдения",
 };
 
-
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html>

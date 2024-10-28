@@ -13,9 +13,7 @@ const Possibilities = () => {
     return (
         <div className="w-full text-center pt-16 pb-[177px]">
             <div className="relative">
-                <Image src="/images/effectPointTwo.png" alt="point" width={112} height={64} className="absolute right-0 top-[404px]" />
-            </div>
-            <div className="relative">
+                <Image src="/images/effectPointOne.png" alt="point" width={64} height={112} className="absolute rotate-90 right-[30px] top-[404px]" />
                 <Image src="/images/effectPointOne.png" alt="point" width={64} height={112} className="absolute top-[563px]" />
             </div>
             <h2 className="text-[36px] font-bold text-charcoal mb-10">ВОЗМОЖНОСТИ</h2>
