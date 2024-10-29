@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './CircleIcon.module.css';
 
 interface CircleIconProps {
     id: number;
@@ -8,10 +9,6 @@ interface CircleIconProps {
 
 const CircleIcon = ({ id, isActive = true, onClick }: CircleIconProps) => {
     const [scale, setScale] = useState(1);
-
-    const colors = isActive
-        ? { fill: '#00C5DE', stroke: '#FDFDFD' }
-        : { fill: '#FDFDFD', stroke: '#00C5DE' };
 
     const handleMouseDown = () => {
         setScale(0.9);
@@ -24,18 +21,15 @@ const CircleIcon = ({ id, isActive = true, onClick }: CircleIconProps) => {
 
     return (
         <button
+            className={styles.button}
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
-            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
         >
-            <svg width="54" height="54" 
-            xmlns="http://www.w3.org/2000/svg"
-            style={{ transform: `scale(${scale})`, transition: 'transform 0.2s' }}
-            >
+            <svg width="54" height="54" xmlns="http://www.w3.org/2000/svg" className={styles.svg} style={{ transform: `scale(${scale})` }}>
                 <circle cx="27" cy="27" r="27" fill="none" stroke="#00c5de" strokeWidth="1" strokeDasharray="5 5" />
-                <circle cx="27" cy="27" r="22" fill={colors.fill} />
-                <text x="26" y="35" fontWeight="800" fontSize="24" textAnchor="middle" fill={colors.fill} stroke={colors.stroke} strokeWidth="0.7">
+                <circle cx="27" cy="27" r="22" className={isActive ? styles.active : styles.inactive} />
+                <text x="26" y="35" fontWeight="800" fontSize="24" textAnchor="middle" fill={isActive ? '#00C5DE' : '#FDFDFD'} stroke={isActive ? '#FDFDFD' : '#00C5DE'} strokeWidth="0.7" >
                     {id}
                 </text>
             </svg>

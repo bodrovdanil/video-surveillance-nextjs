@@ -1,0 +1,40 @@
+.tooltipButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.tooltipSvg {
+    transition: transform 0.2s;
+}
+
+.tooltipRect {
+    fill: #fff;
+}
+
+.tooltipStroke {
+    stroke: var(--color-main);
+    stroke-dasharray: 5, 5;
+}
+
+.tooltipTextMain {
+    font-size: 24px;
+    font-weight: 600;
+    fill: var(--color-main);
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.tooltipTextSecondary {
+    font-size: 20px;
+    font-weight: 400;
+    fill: var(--text-color);
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.tooltipLine {
+    stroke: var(--color-main);
+    stroke-width: 4;
+}

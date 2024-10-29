@@ -13,7 +13,7 @@ interface ISecurityCameras {
 
 const SecurityCameras = () => {
     return (
-        <div className="bg-blue-red w-full text-center  text-white pt-1 pb-[121px] ">
+        <div className="bg-gradient-to-b from-[#0C0823] to-[#130C35] w-full text-center  text-white pt-1 pb-[121px] ">
             <div className="relative">
                 <Image src="/images/HighlightingForm.png" alt='lightingForm'  width={1505}  height={406} className='z-0 absolute left-[10%] -top-[152px]' />
                 <Image src="/images/GroupHexagonLeft.png" alt="Hexagon" width={426} height={844} className="absolute left-0 top-[585px]" />

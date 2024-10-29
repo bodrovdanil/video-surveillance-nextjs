@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import styles from './Tooltip.module.css';
 
 interface TooltipProps {
     id: number;
     text: string;
     text2: string;
     isActive: boolean;
-    onClick?: (id: number) => void; // Изменим тип onClick, чтобы передавать id
+    onClick?: (id: number) => void;
 }
 
 const Tooltip = ({ id, text, text2, isActive, onClick }: TooltipProps) => {
@@ -28,21 +29,21 @@ const Tooltip = ({ id, text, text2, isActive, onClick }: TooltipProps) => {
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
-            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+            className={styles.tooltipButton}
         >
             <svg
                 width="261" height="145"
-                xmlns="http://www.w3.org/2000/svg"
-                style={{ transform: `scale(${scale})`, transition: 'transform 0.2s' }}
+                className={styles.tooltipSvg}
+                style={{ transform: `scale(${scale})` }}
             >
-                <rect y="28" width="261" height="117" rx="20" ry="20" fill="#fff" />
-                <rect x="7" y="35" width="247" height="103" rx="20" ry="20" fill="none" stroke={colorMain} strokeDasharray="5, 5" />
+                <rect y="28" width="261" height="117" rx="20" ry="20" className={styles.tooltipRect} />
+                <rect x="7" y="35" width="247" height="103" rx="20" ry="20" fill='none' className={styles.tooltipStroke} style={{ stroke: colorMain }} />
                 <path fill="#fff" d="m130 0 20 28h-40z" />
-                <text x="50%" y="75" fontSize="24" fontWeight="600" fill={colorMain} textAnchor="middle" dominantBaseline="middle">Разрешение</text>
-                <text x="36%" y="110" fontSize="20" fontWeight="400" fill={textColor} textAnchor="middle" dominantBaseline="middle">{text}</text>
-                <text x="77%" y="110" fontSize="20" fontWeight="400" fill={textColor} textAnchor="middle" dominantBaseline="middle">{text2}</text>
-                <line x1="156" y1="101" x2="170" y2="115" stroke={colorMain} strokeWidth="4" />
-                <line x1="156" y1="115" x2="170" y2="101" stroke={colorMain} strokeWidth="4" />
+                <text x="50%" y="75" className={styles.tooltipTextMain} style={{ fill: colorMain }}>Разрешение</text>
+                <text x="36%" y="110" className={styles.tooltipTextSecondary} style={{ fill: textColor }}>{text}</text>
+                <text x="77%" y="110" className={styles.tooltipTextSecondary} style={{ fill: textColor }}>{text2}</text>
+                <line x1="156" y1="101" x2="170" y2="115" className={styles.tooltipLine} style={{ stroke: colorMain }} />
+                <line x1="156" y1="115" x2="170" y2="101" className={styles.tooltipLine} style={{ stroke: colorMain }} />
             </svg>
         </button>
     );

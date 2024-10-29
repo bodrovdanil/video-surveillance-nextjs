@@ -1,0 +1,35 @@
+.container {
+    @apply relative flex flex-col items-center bg-platinum bg-cover bg-center bg-[url('/images/BGQuality.png')];
+}
+
+.title {
+    @apply text-[36px] leading-[77px] text-charcoal font-extrabold uppercase mt-20 mb-12;
+}
+
+.imageWrapper {
+    @apply relative w-[1140px] h-[669px] rounded-[35px] border-[3px] border-blackbirds-egg flex items-center justify-center mb-10;
+}
+
+.image {
+    @apply rounded-[20px] w-[1110px] h-[639px];
+}
+
+.circlesWrapper {
+    @apply flex justify-between w-[936px] mx-[102px] mb-[19px];
+}
+
+.circleContainer {
+    @apply relative z-10 flex justify-between drop-shadow-md mb-[19px] w-[1140px] px-[102px];
+}
+
+.separator {
+    @apply absolute -z-10 left-0 bottom-[9px] h-[2px] w-[1140px] bg-blackbirds-egg;
+}
+
+.tooltipsWrapper {
+    @apply relative flex justify-between drop-shadow-md w-[1140px] mb-[45px];
+}
+
+.buttonWrapper {
+    @apply mb-[76px] items-center;
+}

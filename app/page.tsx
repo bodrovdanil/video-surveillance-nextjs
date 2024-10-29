@@ -1,8 +1,9 @@
-import FormCalculation from "./components/FormCalculation/FormCalculation";
 import HomeScreen from "./components/HomeScreen";
-import ImageQuality from "./components/ImageQuality/ImageQuality";
 import Possibilities from "./components/Possibilities/Possibilities";
+import FormCalculation from "./components/FormCalculation/FormCalculation";
 import SecurityCameras from "./components/SecurityCameras/SecurityCameras";
+import ImageQuality from "./components/ImageQuality/ImageQuality";
+import HotQuestions from "./components/HotQuestions/HotQuestions";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <FormCalculation />
       <SecurityCameras />
       <ImageQuality />
+      <HotQuestions />
     </div>
   );
 };
