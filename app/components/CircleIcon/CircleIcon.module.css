@@ -11,10 +11,8 @@
 
 .active {
     fill: #00C5DE;
-    stroke: #FDFDFD;
 }
 
 .inactive {
-    fill: #FDFDFD;
-    stroke: #00C5DE;
+    fill: #F5F5F5;
 }

@@ -1,0 +1,15 @@
+.container {
+    @apply flex items-center flex-col text-charcoal mt-[93px] mb-[70px];
+}
+
+.title {
+    @apply text-[36px] leading-[50px] text-center font-bold uppercase w-[58.8%] mb-6;
+}
+
+.highlight {
+    @apply font-extrabold;
+}
+
+.paragraph {
+    @apply text-[16px] leading-6 text-left font-light w-[59.2%] mb-6;
+}

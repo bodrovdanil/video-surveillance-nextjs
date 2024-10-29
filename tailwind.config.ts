@@ -15,7 +15,7 @@ const config: Config = {
         xl: '1440px',
       },
       colors: {
-        'platinum': '#FDFDFD',
+        'platinum': '#F5F5F5',
         'dim-gray': '#6A6A6A',
         'gray': '#414141',
         'lavender-blue': '#C8C1F1',

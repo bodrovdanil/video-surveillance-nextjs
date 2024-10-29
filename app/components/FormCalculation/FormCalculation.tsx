@@ -1,23 +1,24 @@
 import Image from 'next/image';
 import InputPhone from '../InputPhone/InputPhone';
 import Button from '../Button/Button';
+import styles from './FormCalculation.module.css';
 
 const FormCalculation = () => {
     return (
-        <div className='relative flex justify-center w-full z-10'>
-            <div className='absolute top-[-70px] w-[1140px] h-[141px] rounded-[20px] bg-blue-red shadow-xl flex flex-col'>
-                <Image src="/images/Form.png" alt='form' width={1140} height={141} className='rounded-[20px]' />
-                <div className='flex items-center justify-start absolute left-[68px] w-full'>
-                    <div className='mt-10 mr-7 w-[23px] h-[23px] bg-blackbirds-egg rounded-full'></div>
-                    <div className='mt-[26px] w-[366px] h-[87px]'>
-                        <p className='text-[20px] leading-7 font-normal text-white'>
+        <div className={styles.container}>
+            <div className={styles.formWrapper}>
+                <Image src="/images/Form.png" alt='form' width={1140} height={141} className={styles.image} />
+                <div className={styles.content}>
+                    <div className={styles.dot}></div>
+                    <div className={styles.textWrapper}>
+                        <p className={styles.text}>
                             Проект и просчет системы Видеонаблюдения для Вашего Бизнеса <span className='font-extrabold text-[24px] uppercase'>бесплатно!</span>
                         </p>
                     </div>
-                    <div className='-ml-9 mt-12 w-[373px] h-[49px]'>
+                    <div className={styles.phoneInput}>
                         <InputPhone />
                     </div>
-                    <div className='ml-[21px] mt-12 w-[249px] h-[49px] normal-case'>
+                    <div className={styles.buttonWrapper}>
                         <Button variant='filled' uppercase={false}>Получить расчет</Button>
                     </div>
                 </div>
@@ -27,3 +28,4 @@ const FormCalculation = () => {
 };
 
 export default FormCalculation;
+

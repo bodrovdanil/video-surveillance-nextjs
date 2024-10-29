@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css"
-import Header from './components/Header';
-import {Inter} from 'next/font/google';
+import Header from './components/Header/Header';
+import { Inter } from 'next/font/google';
 
 const inter = Inter({
-  weight: ['300','400', '700','800'],
+  weight: ['300', '400', '700', '800'],
   style: ['normal'],
   subsets: ['cyrillic'],
   display: 'swap',

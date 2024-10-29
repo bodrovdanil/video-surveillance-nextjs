@@ -29,7 +29,7 @@ const CircleIcon = ({ id, isActive = true, onClick }: CircleIconProps) => {
             <svg width="54" height="54" xmlns="http://www.w3.org/2000/svg" className={styles.svg} style={{ transform: `scale(${scale})` }}>
                 <circle cx="27" cy="27" r="27" fill="none" stroke="#00c5de" strokeWidth="1" strokeDasharray="5 5" />
                 <circle cx="27" cy="27" r="22" className={isActive ? styles.active : styles.inactive} />
-                <text x="26" y="35" fontWeight="800" fontSize="24" textAnchor="middle" fill={isActive ? '#00C5DE' : '#FDFDFD'} stroke={isActive ? '#FDFDFD' : '#00C5DE'} strokeWidth="0.7" >
+                <text x="26" y="35" fontWeight="800" fontSize="24" textAnchor="middle" fill={isActive ? '#00C5DE' : '#F5F5F5'} stroke={isActive ? '#F5F5F5' : '#00C5DE'} strokeWidth="0.7" >
                     {id}
                 </text>
             </svg>

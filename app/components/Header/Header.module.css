@@ -1,0 +1,11 @@
+.header {
+    @apply bg-smoky-white w-full h-[80px] fixed z-20 top-0 flex items-center justify-center px-10 shadow-md font-normal text-[16px];
+}
+
+.logo {
+    @apply mr-[65px];
+}
+
+.nav {
+    @apply flex space-x-[38px] text-dim-gray uppercase;
+}

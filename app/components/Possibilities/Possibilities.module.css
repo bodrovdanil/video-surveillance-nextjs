@@ -1,0 +1,48 @@
+.container {
+    @apply w-full text-center pt-16 pb-[177px];
+}
+
+.effectPoint {
+    @apply absolute rotate-90 right-[30px] top-[404px];
+}
+
+.effectPointTwo {
+    @apply absolute top-[563px];
+}
+
+.title {
+    @apply text-[36px] font-bold text-charcoal mb-10;
+}
+
+.wrapper {
+    @apply flex justify-center;
+}
+
+.maxWidth {
+    @apply max-w-[1600px] w-full;
+}
+
+.flexWrapper {
+    @apply flex flex-wrap justify-center;
+}
+
+.card {
+    @apply w-[380px] h-[415px] m-4 flex flex-col items-center relative;
+}
+
+.image {
+    @apply w-[360px] h-[211px] rounded-[20px] shadow-md;
+}
+
+.icon {
+    @apply absolute left-1/2 transform -translate-x-1/2;
+    top: 171px;
+}
+
+.cardTitle {
+    @apply text-[20px] font-bold text-blackbirds-egg mt-12 leading-[37px];
+}
+
+.cardSubtitle {
+    @apply text-[16px] font-light text-gray leading-6;
+}

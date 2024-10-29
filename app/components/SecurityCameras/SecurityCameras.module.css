@@ -1,0 +1,39 @@
+.container {
+    @apply bg-gradient-to-b from-[#0C0823] to-[#130C35] w-full text-center text-white pt-1 pb-[121px];
+}
+
+.title {
+    @apply text-[36px] font-semibold uppercase mt-[154px];
+}
+
+.flexContainer {
+    @apply flex flex-col flex-wrap items-center;
+}
+
+.cameraItem {
+    @apply w-[1155px] flex bg-no-repeat;
+}
+
+.cameraItemEven {
+    @apply flex-row-reverse;
+}
+
+.cameraItemOdd {
+    @apply flex-row;
+}
+
+.cameraContent {
+    @apply flex-initial flex flex-col justify-center items-start text-start relative w-[570px];
+}
+
+.cameraTitle {
+    @apply text-[24px] font-bold leading-[37px];
+}
+
+.cameraSubtitle {
+    @apply text-[14px] font-light my-8 leading-6;
+}
+
+.svgContainer {
+    @apply flex justify-end w-[510px];
+}

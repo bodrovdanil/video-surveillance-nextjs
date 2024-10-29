@@ -1,9 +1,10 @@
-import HomeScreen from "./components/HomeScreen";
+import HomeScreen from "./components/HomeScreen/HomeScreen";
 import Possibilities from "./components/Possibilities/Possibilities";
 import FormCalculation from "./components/FormCalculation/FormCalculation";
 import SecurityCameras from "./components/SecurityCameras/SecurityCameras";
 import ImageQuality from "./components/ImageQuality/ImageQuality";
 import HotQuestions from "./components/HotQuestions/HotQuestions";
+import SEOText from "./components/SEOText/SEOText";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <SecurityCameras />
       <ImageQuality />
       <HotQuestions />
+      <SEOText />
     </div>
   );
 };
