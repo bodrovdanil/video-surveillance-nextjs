@@ -9,10 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        sm: '480px',
-        md: '768px',
-        lg: '976px',
-        xl: '1440px',
+        'xs': '576px',
+        'sm': '640px',
+        'md': '868px',
+        'lg': '992px',
+        'xl': '1200px',
+        '2xl': '1536px',
       },
       colors: {
         'platinum': '#F5F5F5',

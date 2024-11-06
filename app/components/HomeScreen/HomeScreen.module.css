@@ -1,17 +1,17 @@
 /* HomeScreen.module.css */
-.container {
-    @apply h-screen bg-cover bg-center inset-x-0 top-0;
+.background {
+    @apply  min-h-[450px] h-[49vw] bg-cover bg-center inset-x-0 top-0 ;
     background-image: url('/images/homePage.png');
 }
 
 .title {
-    @apply w-[923px] h-[170px] mt-[125px] text-[58px] leading-[77px] text-center text-blackbirds-egg font-medium;
+    @apply w-[48.07vw] min-w-[320px] h-[8.85vw] min-h-min mt-[6.5vw] text-[26px] md:text-[3.05vw] leading-[36px] md:leading-[4vw] text-center text-blackbirds-egg font-medium;
 }
 
 .subtitle {
-    @apply text-center align-bottom text-[24px] leading-[77px] text-dim-gray font-normal;
+    @apply mx-3 min-h-min my-6 md:my-0 text-center align-bottom text-[16px] md:text-[1.25vw] leading-[22px] sm:leading-[4vw] text-dim-gray font-normal;
 }
 
-.buttonContainer {
-    @apply flex justify-center;
+.container {
+    @apply flex justify-center ;
 }

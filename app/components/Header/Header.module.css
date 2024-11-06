@@ -1,11 +1,54 @@
 .header {
-    @apply bg-smoky-white w-full h-[80px] fixed z-20 top-0 flex items-center justify-center px-10 shadow-md font-normal text-[16px];
+    @apply bg-smoky-white w-[100vw] h-[80px] fixed z-20 top-0 flex items-center justify-center px-[2.08vw] shadow-md font-normal text-[12px] lg:text-[16px] ;
 }
 
 .logo {
-    @apply mr-[65px];
+    @apply  mr-[3.4%];
+}
+
+.burgerButton {
+    @apply md:hidden flex flex-col items-center justify-center w-10 h-10 p-1 cursor-pointer;
+}
+
+.burgerIcon {
+    @apply relative block w-6 h-0.5 bg-dim-gray ;
+    content: '';
+    display: block;
+    margin: 4px 0;
+}
+
+.burgerIcon::before,
+.burgerIcon::after {
+    @apply block w-6 h-0.5 bg-dim-gray ;
+    content: '';
+    position: absolute;
+}
+
+.burgerIcon::before {
+    transform: translateY(-8px);
+}
+
+.burgerIcon::after {
+    transform: translateY(8px);
 }
 
 .nav {
-    @apply flex space-x-[38px] text-dim-gray uppercase;
+    @apply hidden md:flex md:space-x-[1.98vw] text-dim-gray uppercase;
+}
+
+.navOpen {
+    @apply flex flex-col absolute top-[80px] items-center w-full bg-smoky-white p-6 space-y-4 md:hidden;
+    
+}
+
+.open {
+    @apply bg-transparent;
+}
+
+.open::before {
+    transform: rotate(45deg) translate(0, 0);
+}
+
+.open::after {
+    transform: rotate(-45deg) translate(0, 0);
 }

@@ -3,14 +3,14 @@ import styles from './HomeScreen.module.css';
 
 const HomeScreen = () => {
     return (
-        <div className={styles.container}>
-            <div className={styles.buttonContainer}>
+        <div className={styles.background}>
+            <div className={styles.container}>
                 <h1 className={styles.title}>Проектирование и установка систем видеонаблюдения</h1>
             </div>
-            <div className={styles.buttonContainer}>
-                <h4 className={styles.subtitle}>Защитите свой бизнес от неожиданных сбоев!</h4>
+            <div className={styles.container}>
+                <p className={styles.subtitle}>Защитите свой бизнес от неожиданных сбоев!</p>
             </div>
-            <div className={styles.buttonContainer}>
+            <div className={styles.container}>
                 <Button variant="filled">узнать больше</Button>
             </div>
         </div>

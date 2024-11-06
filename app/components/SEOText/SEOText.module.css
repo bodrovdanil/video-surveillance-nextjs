@@ -3,7 +3,7 @@
 }
 
 .title {
-    @apply text-[36px] leading-[50px] text-center font-bold uppercase w-[58.8%] mb-6;
+    @apply text-[24px] md:text-[30px] xl:text-[36px] leading-[50px] text-center font-bold uppercase w-[58.8%] mb-6;
 }
 
 .highlight {

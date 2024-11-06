@@ -3,33 +3,37 @@
 }
 
 .title {
-    @apply text-[36px] leading-[77px] text-charcoal font-extrabold uppercase mt-20 mb-12;
+    @apply text-[24px] md:text-[30px] xl:text-[36px] leading-[4.0104vw] text-charcoal font-extrabold uppercase mt-20 mb-12;
 }
 
 .imageWrapper {
-    @apply relative w-[1140px] h-[669px] rounded-[35px] border-[3px] border-blackbirds-egg flex items-center justify-center mb-10;
+    @apply relative w-[59.375vw] h-[34.8437vw] rounded-[1.822vw] border-[0.15625vw] border-blackbirds-egg flex items-center justify-center mb-10;
+}
+
+.imageText {
+    @apply xl:hidden absolute top-[0.833vw] right-[1.25vw] text-charcoal text-[1.25vw] font-bold;
 }
 
 .image {
-    @apply rounded-[20px] w-[1110px] h-[639px];
+    @apply rounded-[1.0416vw] w-[57.812vw] h-[33.2812vw];
 }
 
 .circlesWrapper {
-    @apply flex justify-between w-[936px] mx-[102px] mb-[19px];
+    @apply mb-[2.34375vw] hidden sm:flex justify-between w-[48.75vw] mx-[5.312vw] xl:mb-[0.9895vw];
 }
 
 .circleContainer {
-    @apply relative z-10 flex justify-between drop-shadow-md mb-[19px] w-[1140px] px-[102px];
+    @apply hidden xl:flex relative z-10 justify-between drop-shadow-md mb-[0.9895vw] w-[59.375vw] px-[5.312vw];
 }
 
 .separator {
-    @apply absolute -z-10 left-0 bottom-[9px] h-[2px] w-[1140px] bg-blackbirds-egg;
+    @apply hidden xl:flex absolute -z-10 left-0 bottom-[0.46875vw] h-[2px] w-[59.375vw] bg-blackbirds-egg;
 }
 
 .tooltipsWrapper {
-    @apply relative flex justify-between drop-shadow-md w-[1140px] mb-[45px];
+    @apply hidden xl:flex relative justify-between drop-shadow-md w-[1140px] mb-[2.34375vw];
 }
 
 .buttonWrapper {
-    @apply mb-[76px] items-center;
+    @apply mb-[3.9583vw] items-center;
 }

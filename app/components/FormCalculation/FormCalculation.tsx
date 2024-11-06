@@ -6,6 +6,7 @@ import styles from './FormCalculation.module.css';
 const FormCalculation = () => {
     return (
         <div className={styles.container}>
+            <Image src="/images/HighlightingForm.png" alt='lightingForm' width={1505} height={406} className={styles.lighting} />
             <div className={styles.formWrapper}>
                 <Image src="/images/Form.png" alt='form' width={1140} height={141} className={styles.image} />
                 <div className={styles.content}>

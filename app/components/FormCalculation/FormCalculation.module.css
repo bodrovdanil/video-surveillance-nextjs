@@ -1,17 +1,21 @@
 .container {
-    @apply relative flex justify-center w-full z-10;
+    @apply relative hidden lg:flex justify-center z-10;
+}
+
+.lighting {
+    @apply w-[1505px] h-[406px] absolute top-[55px] left-1/2 bottom-0 transform -translate-x-1/2 -translate-y-1/2;
 }
 
 .formWrapper {
-    @apply absolute top-[-70px] w-[1140px] h-[141px] rounded-[20px] bg-blue-red shadow-xl flex flex-col;
+    @apply absolute top-[-70px] lg:w-[980px] xl:w-[1140px] h-[141px] rounded-[20px] bg-blue-red shadow-xl flex flex-col;
 }
 
 .image {
-    @apply rounded-[20px];
+    @apply object-cover w-[1140px] h-[141px] rounded-[20px];
 }
 
 .content {
-    @apply flex items-center justify-start absolute left-[68px] w-full;
+    @apply flex items-center justify-start absolute left-[3.5vw];
 }
 
 .dot {
@@ -19,7 +23,7 @@
 }
 
 .textWrapper {
-    @apply my-[26px] w-[366px] h-[87px];
+    @apply my-[26px] w-[326px] h-[87px];
 }
 
 .text {
@@ -27,9 +31,9 @@
 }
 
 .phoneInput {
-    @apply -ml-9 my-12 w-[373px] h-[49px];
+    @apply  my-12  h-[49px];
 }
 
 .buttonWrapper {
-    @apply ml-[21px] my-12 w-[249px] h-[49px] normal-case;
+    @apply ml-[21px] my-12  normal-case;
 }

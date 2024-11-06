@@ -1,9 +1,29 @@
 .container {
-    @apply bg-gradient-to-b from-[#0C0823] to-[#130C35] w-full text-center text-white pt-1 pb-[121px];
+    @apply hidden md:block bg-gradient-to-b from-[#0C0823] to-[#130C35] w-full text-center text-white pt-1 pb-[121px];
+}
+
+.image1 {
+    @apply absolute left-0 top-[585px] w-auto h-auto;
+}
+
+.image2 {
+    @apply rotate-90 absolute left-[17.7%] -top-3 w-auto h-auto;
+}
+
+.image3 {
+    @apply absolute right-0 top-[1036px] w-auto h-auto;
+}
+
+.image4 {
+    @apply absolute top-[188px] w-auto h-auto;
+}
+
+.image5 {
+    @apply absolute right-0 top-[563px] w-auto h-auto;
 }
 
 .title {
-    @apply text-[36px] font-semibold uppercase mt-[154px];
+    @apply text-[24px] md:text-[30px] xl:text-[36px] font-semibold uppercase mt-[54px] lg:mt-[154px];
 }
 
 .flexContainer {
@@ -11,7 +31,7 @@
 }
 
 .cameraItem {
-    @apply w-[1155px] flex bg-no-repeat;
+    @apply  w-[700px] md:w-[750px] lg:w-[870px] xl:w-[1000px] 2xl:w-[60.1vw] flex bg-no-repeat;
 }
 
 .cameraItemEven {
@@ -23,17 +43,17 @@
 }
 
 .cameraContent {
-    @apply flex-initial flex flex-col justify-center items-start text-start relative w-[570px];
+    @apply flex-initial flex flex-col justify-center items-start text-start relative w-[29.6vw];
 }
 
 .cameraTitle {
-    @apply text-[24px] font-bold leading-[37px];
+    @apply text-[18px] lg:text-[20px] xl:text-[24px] font-bold leading-[1.92vw];
 }
 
 .cameraSubtitle {
-    @apply text-[14px] font-light my-8 leading-6;
+    @apply text-[12px] lg:text-[13px] xl:text-[14px] font-light my-[1.66vw] leading-[18px] lg:leading-[20px] xl:leading-[24px];
 }
 
 .svgContainer {
-    @apply flex justify-end w-[510px];
+    @apply flex justify-end w-[26.56vw];
 }

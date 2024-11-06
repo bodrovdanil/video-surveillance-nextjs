@@ -1,17 +1,17 @@
 .container {
-    @apply w-full text-center pt-16 pb-[177px];
+    @apply w-full text-center pt-16 pb-[9.2vw];
 }
 
 .effectPoint {
-    @apply absolute rotate-90 right-[30px] top-[404px];
+    @apply hidden sm:flex absolute rotate-90 right-[30px] top-[404px];
 }
 
 .effectPointTwo {
-    @apply absolute top-[563px];
+    @apply hidden sm:flex absolute top-[563px];
 }
 
 .title {
-    @apply text-[36px] font-bold text-charcoal mb-10;
+    @apply text-[24px] md:text-[30px] xl:text-[36px] font-bold text-charcoal mb-10;
 }
 
 .wrapper {
@@ -27,7 +27,7 @@
 }
 
 .card {
-    @apply w-[380px] h-[415px] m-4 flex flex-col items-center relative;
+    @apply w-[380px] h-[450px] md:h-[415px] m-[0.83vw] flex flex-col items-center relative;
 }
 
 .image {
@@ -35,8 +35,7 @@
 }
 
 .icon {
-    @apply absolute left-1/2 transform -translate-x-1/2;
-    top: 171px;
+    @apply absolute -bottom-[40px] left-1/2 transform -translate-x-1/2 w-[80px] h-[80px];
 }
 
 .cardTitle {
@@ -44,5 +43,5 @@
 }
 
 .cardSubtitle {
-    @apply text-[16px] font-light text-gray leading-6;
+    @apply text-[14px] font-light text-gray leading-6;
 }

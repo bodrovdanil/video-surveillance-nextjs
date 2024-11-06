@@ -22,8 +22,10 @@ const Possibilities = () => {
                     <div className={styles.flexWrapper}>
                         {PossibilitiesData.map((item: IPossibilities, index: number) => (
                             <div key={index} className={styles.card}>
-                                <img src={item.img} alt={item.title} className={styles.image} />
-                                <Image src={item.icon} alt={item.title} width={80} height={80} className={styles.icon} />
+                                <div className='relative'>
+                                    <Image src={item.img} alt={item.title} width={360} height={211} className={styles.image} />
+                                    <Image src={item.icon} alt={item.title} width={80} height={80} className={styles.icon} />
+                                </div>
                                 <h3 className={styles.cardTitle}>{item.title}</h3>
                                 <p className={styles.cardSubtitle}>{item.subtitle}</p>
                             </div>
