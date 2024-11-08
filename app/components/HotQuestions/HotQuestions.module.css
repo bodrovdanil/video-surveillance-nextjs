@@ -3,21 +3,21 @@
 }
 
 .title {
-    @apply text-[24px] md:text-[30px] xl:text-[36px] font-normal text-center text-white pt-[96px] pb-[46px];
+    @apply text-[24px] md:text-[30px] xl:text-[36px] font-normal text-center text-white  px-4 pt-[5vw] pb-[2.3958vw];
 }
 
 .questionsWrapper {
-    @apply flex items-center flex-col pb-[103px];
+    @apply flex items-center flex-col pb-[5.3645vw];
 }
 
 .questionDetail {
-    @apply border border-[#e1e5ee] rounded-[10px] cursor-pointer mb-5 w-[59.37%];
+    @apply border border-[#e1e5ee] rounded-[10px] cursor-pointer mb-4 w-[95%] max-w-[1140px];
 }
 
 .questionText {
-    @apply text-white text-left text-[20px] font-normal leading-[120%] px-5 py-5 justify-between flex;
+    @apply text-white text-left text-[20px] font-normal leading-[120%] p-4 justify-between flex;
 }
 
 .answerText {
-    @apply text-white text-left text-[20px] font-normal leading-[120%] px-5 pt-1 pb-5 flex;
+    @apply text-white text-left text-[16px] font-light leading-[120%] px-4 pt-1 pb-5 flex;
 }

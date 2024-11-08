@@ -1,9 +1,9 @@
 .container {
-    @apply flex items-center flex-col text-charcoal mt-[93px] mb-[70px];
+    @apply flex items-center flex-col text-charcoal mt-[4.8437vw] mb-[3.6458vw];
 }
 
 .title {
-    @apply text-[24px] md:text-[30px] xl:text-[36px] leading-[50px] text-center font-bold uppercase w-[58.8%] mb-6;
+    @apply text-[24px] md:text-[30px] xl:text-[36px] leading-[40px] text-center font-bold uppercase w-[95vw] max-w-[1130px] mb-6;
 }
 
 .highlight {
@@ -11,5 +11,5 @@
 }
 
 .paragraph {
-    @apply text-[16px] leading-6 text-left font-light w-[59.2%] mb-6;
+    @apply text-[16px] leading-6 text-left font-light w-[95vw] max-w-[1140px] mb-6;
 }

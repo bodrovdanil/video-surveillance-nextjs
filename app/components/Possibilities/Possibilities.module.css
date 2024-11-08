@@ -3,11 +3,11 @@
 }
 
 .effectPoint {
-    @apply hidden sm:flex absolute rotate-90 right-[30px] top-[404px];
+    @apply hidden sm:flex w-[64px] h-[112px] absolute rotate-90 right-[30px] top-[404px];
 }
 
 .effectPointTwo {
-    @apply hidden sm:flex absolute top-[563px];
+    @apply hidden sm:flex w-[64px] h-[112px] absolute top-[563px];
 }
 
 .title {
@@ -27,7 +27,7 @@
 }
 
 .card {
-    @apply w-[380px] h-[450px] md:h-[415px] m-[0.83vw] flex flex-col items-center relative;
+    @apply w-[380px] h-auto md:h-[415px] m-3 flex flex-col items-center relative;
 }
 
 .image {
@@ -43,5 +43,5 @@
 }
 
 .cardSubtitle {
-    @apply text-[14px] font-light text-gray leading-6;
+    @apply text-[14px] font-light text-gray  p-4 leading-6;
 }

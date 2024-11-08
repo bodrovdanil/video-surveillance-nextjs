@@ -1,29 +1,25 @@
 .container {
-    @apply block md:hidden bg-gradient-to-b from-[#0C0823] to-[#130C35] w-full text-center text-white pt-1 pb-[21px];
+    @apply block md:hidden bg-gradient-to-b from-[#0C0823] to-[#130C35] w-full text-center text-white pt-1 pb-[21px] z-0;
 }
 
 .image1 {
-    @apply absolute left-0 top-[585px] w-auto h-auto;
+    @apply absolute left-0 top-[585px] w-[426px] h-[844px];
 }
 
 .image2 {
-    @apply rotate-90 absolute left-[17.7%] -top-3 w-auto h-auto;
+    @apply absolute right-0 top-[1036px] w-[434px] h-[722px];
 }
 
 .image3 {
-    @apply absolute right-0 top-[1036px] w-auto h-auto;
+    @apply absolute top-[188px] w-[64px] h-[112px];
 }
 
 .image4 {
-    @apply absolute top-[188px] w-auto h-auto;
-}
-
-.image5 {
-    @apply absolute right-0 top-[563px] w-auto h-auto;
+    @apply absolute right-0 top-[563px] w-[170px] h-[132px];
 }
 
 .title {
-    @apply text-[24px] font-semibold uppercase my-[8vw];
+    @apply text-[24px] md:text-[30px] xl:text-[36px] p-4 z-10 font-semibold uppercase my-[8vw];
 }
 
 .flexWrapper {
@@ -31,7 +27,7 @@
 }
 
 .card {
-    @apply w-[380px] h-[540px] m-[8px] xs:m-[0.83vw]  border-[1px] border-blackbirds-egg rounded-[20px] flex flex-col items-center relative;
+    @apply w-[380px] h-auto m-[8px] border-[1px] border-blackbirds-egg rounded-[20px] mx-3 flex flex-col items-center relative;
 }
 
 .image {
@@ -43,5 +39,5 @@
 }
 
 .cardSubtitle {
-    @apply text-[14px] font-light mx-2 leading-6;
+    @apply text-[14px] font-light p-4 leading-6;
 }
