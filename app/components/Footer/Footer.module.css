@@ -1,0 +1,35 @@
+.footerContainer {
+    @apply bg-gradient-to-b from-[#0C0823] to-[#130C35] w-full text-white flex flex-col items-center;
+}
+
+.footerInnerContainer {
+    @apply flex flex-col md:flex-row items-center justify-between max-w-[1040px] w-[95%] pt-[2vw] pb-[2.3958vw];
+}
+
+.logo {
+    @apply w-[190px] h-[56px] mb-4 md:mb-0;
+}
+
+.slogan {
+    @apply text-[16px] md:text-[22px] xl:text-[26px] font-normal uppercase text-center md:text-left;
+}
+
+.footerContent {
+    @apply flex flex-col md:flex-row justify-between items-center max-w-[1040px] w-[95%] gap-4 pt-[2vw] pb-[2.3958vw] text-center md:text-left;
+}
+
+.iconTextContainer {
+    @apply text-[14px] relative flex items-start gap-2;
+}
+
+.icon {
+    @apply w-5 h-5;
+}
+
+.link {
+    @apply hover:underline;
+}
+
+.contactInfo {
+    @apply flex flex-col items-start gap-1 text-[14px];
+}

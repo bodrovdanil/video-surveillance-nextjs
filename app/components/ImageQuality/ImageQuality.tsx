@@ -5,7 +5,6 @@ import Image from "next/image";
 import Circle from "../Circle/Circle";
 import CircleIcon from "../CircleIcon/CircleIcon";
 import Tooltip from "../Tooltip/Tooltip";
-import Button from "../Button/Button";
 import styles from "./ImageQuality.module.css";
 
 const firaSans = Fira_Sans({
@@ -63,9 +62,7 @@ const ImageQuality = () => {
                         <Tooltip text="6 Мп (3072" text2="2048)" isActive={activeId === 4} onClick={() => handleClick(4)} id={4} />
                     </div>
                 </div>
-                <div className={styles.buttonWrapper}>
-                    <Button variant='filled'>читать подробнее</Button>
-                </div>
+            
             </div>
         </div>
     );

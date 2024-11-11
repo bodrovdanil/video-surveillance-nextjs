@@ -1,0 +1,19 @@
+.formContainer {
+    @apply max-w-xs mx-[1vw];
+}
+
+.inputWrapper {
+    @apply relative;
+}
+
+.iconSpan {
+    @apply absolute start-0 bottom-3;
+}
+
+.inputField {
+    @apply block py-2.5 ps-6 w-full text-sm text-silver bg-transparent border-b-2 border-silver dark:text-blackbirds-egg dark:border-silver dark:focus:border-blackbirds-egg focus:outline-none;
+}
+
+.iconSize {
+    @apply w-5 h-5;
+}

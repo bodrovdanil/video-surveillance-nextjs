@@ -12,6 +12,10 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const scrollToForm = () => {
+        const formElement = document.getElementById("application-form");
+        formElement?.scrollIntoView({ behavior: 'smooth' });};
+
     return (
         <header className={styles.header}>
             <Image src="/images/logo.png" alt="Logo" width={163} height={48} className={styles.logo} />
@@ -25,7 +29,7 @@ const Header = () => {
                 <Link href="/about">о нас</Link>
                 <Link href="/contacts">контакты</Link>
             </nav>
-            <div className='hidden xs:flex'><Button variant="outline">отправить заявку</Button></div>
+            <div className='hidden xs:flex'><Button variant="outline" onClick={scrollToForm}>отправить заявку</Button></div>
             
         </header>
     );

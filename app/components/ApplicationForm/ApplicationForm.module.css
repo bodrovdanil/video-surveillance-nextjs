@@ -1,0 +1,23 @@
+.container {
+    @apply flex flex-col items-center text-center bg-[#F7F7F7] w-full h-auto;
+}
+
+.title {
+    @apply mt-[5vw] mb-[3.9583vw] w-[95vw] max-w-[920px] font-bold text-[24px] md:text-[30px] xl:text-[36px] uppercase text-charcoal mx-4;
+}
+
+.formContainer {
+    @apply w-[95%] max-w-[1140px] h-auto rounded-[30px] bg-white shadow-lg mb-[5vw] bg-[url('/images/MaskForm.png')];
+}
+
+.subtitle {
+    @apply mx-2 font-bold text-[24px] md:text-[30px] xl:text-[36px] uppercase mt-[2.5vw] text-charcoal mb-[2.5vw];
+}
+
+.inputWrapper {
+    @apply flex justify-center gap-[5vw] mb-[30px] sm:mb-[2.5vw] flex-wrap;
+}
+
+.buttonWrapper {
+    @apply flex justify-center mb-[2.5vw];
+}

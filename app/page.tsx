@@ -1,11 +1,13 @@
 import HomeScreen from "./components/HomeScreen/HomeScreen";
 import Possibilities from "./components/Possibilities/Possibilities";
 import FormCalculation from "./components/FormCalculation/FormCalculation";
-import SecurityCamerasMobile from "./components/SecurityCameras/SecurituCamerasMobile";
+import SecurityCamerasMobile from "./components/SecurityCameras/SecurityCamerasMobile";
 import SecurityCameras from "./components/SecurityCameras/SecurityCameras";
 import ImageQuality from "./components/ImageQuality/ImageQuality";
 import HotQuestions from "./components/HotQuestions/HotQuestions";
 import SEOText from "./components/SEOText/SEOText";
+import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
+import Footer from "./components/Footer/Footer";
 
 
 const HomePage = () => {
@@ -19,6 +21,8 @@ const HomePage = () => {
       <ImageQuality />
       <HotQuestions />
       <SEOText />
+      <ApplicationForm />
+      <Footer />
     </div>
   );
 };

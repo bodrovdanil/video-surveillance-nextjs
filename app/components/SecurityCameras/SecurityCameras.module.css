@@ -3,23 +3,23 @@
 }
 
 .image1 {
-    @apply absolute left-0 top-[585px] w-auto h-auto;
+    @apply absolute left-0 top-[585px] w-[426px] h-[844px];
 }
 
 .image2 {
-    @apply rotate-90 absolute left-[17.7%] -top-3 w-auto h-auto;
+    @apply rotate-90 absolute left-[17.7%] -top-3 w-[89px] h-[103px];
 }
 
 .image3 {
-    @apply absolute right-0 top-[1036px] w-auto h-auto;
+    @apply absolute right-0 top-[1036px] w-[434px] h-[722px];
 }
 
 .image4 {
-    @apply absolute top-[188px] w-auto h-auto;
+    @apply absolute top-[188px] w-[64px] h-[112px];
 }
 
 .image5 {
-    @apply absolute right-0 top-[563px] w-auto h-auto;
+    @apply absolute right-0 top-[563px] w-[170px] h-[132px];
 }
 
 .title {

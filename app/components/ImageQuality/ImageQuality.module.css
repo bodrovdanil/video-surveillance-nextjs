@@ -9,7 +9,7 @@
 }
 
 .title {
-    @apply text-[24px] md:text-[30px] xl:text-[36px] leading-[77px] text-charcoal font-extrabold uppercase mt-20 mb-12;
+    @apply text-[24px] md:text-[30px] xl:text-[36px] leading-[77px] text-charcoal font-extrabold uppercase mt-[4.1666vw] mb-[2.5vw];
 }
 
 .imageWrapper {
@@ -37,9 +37,5 @@
 }
 
 .tooltipsWrapper {
-    @apply relative flex justify-between drop-shadow-md w-[1140px] mb-[15px];
-}
-
-.buttonWrapper {
-    @apply mb-[76px] mt-[30px] items-center;
+    @apply relative flex justify-between drop-shadow-md w-[1140px] mb-[75px];
 }

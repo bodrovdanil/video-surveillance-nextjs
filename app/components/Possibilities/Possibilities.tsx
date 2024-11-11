@@ -11,7 +11,7 @@ interface IPossibilities {
 
 const Possibilities = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="Possibilities">
             <div className="relative">
                 <Image src="/images/effectPointOne.png" alt="point" width={64} height={112} className={styles.effectPoint} />
                 <Image src="/images/effectPointOne.png" alt="point" width={64} height={112} className={styles.effectPointTwo} />
