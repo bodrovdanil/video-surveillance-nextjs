@@ -3,19 +3,19 @@
 }
 
 .image1 {
-    @apply absolute left-0 top-[585px] w-[426px] h-[844px];
+    @apply absolute left-0 top-[585px] w-[362px] h-[1235px];
 }
 
 .image2 {
-    @apply absolute right-0 top-[1036px] w-[434px] h-[722px];
+    @apply absolute right-0 top-[1036px] w-[434px] h-[1235px];
 }
 
 .image3 {
-    @apply absolute top-[188px] w-[64px] h-[112px];
+    @apply absolute top-[188px] w-[95px] h-[125px];
 }
 
 .image4 {
-    @apply absolute right-0 top-[563px] w-[170px] h-[132px];
+    @apply absolute right-0 top-[563px] w-[101px] h-[133px];
 }
 
 .title {

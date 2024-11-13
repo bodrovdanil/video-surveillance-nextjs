@@ -24,11 +24,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     if (req.method === 'POST') {
         const { name, phone } = req.body;
 
-        if (!name || !phone) {
-            return res.status(400).json({ error: 'Необходимо указать имя и телефон' });
+        if (!phone) {
+            return res.status(400).json({ error: 'Необходимо указать телефон' });
         }
 
-        const message = `Новая заявка:\nИмя: ${name}\nТелефон: ${phone}`;
+        const message = name
+            ? `Новая заявка:\nИмя: ${name}\nТелефон: ${phone}`
+            : `Новая заявка:\nТелефон: ${phone}`;
+
         await sendToTelegram(message);
 
         return res.status(200).json({ message: 'Данные успешно отправлены в Telegram' });

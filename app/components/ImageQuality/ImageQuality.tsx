@@ -30,6 +30,7 @@ const ImageQuality = () => {
                 <Image src="/images/effectPointOne.png" alt="point" width={64} height={112} className="w-[64px] h-[112px] absolute left-[3px] top-[856px]" />
                 <Image src="/images/effectPointOne.png" alt="point" width={64} height={112} className="w-[64px] h-[112px] absolute rotate-90 right-[30px] top-[280px]" />
                 <Image src="/images/Gexagon3.png" alt="point" width={72} height={93} className="w-[72px] h-[93px] absolute right-0 top-[561.5px]" />
+                <Image src="/images/Gexagon.png" alt="point" width={110} height={132} className="w-[110px] h-[132px] absolute left-[0] top-[1060px]" />
             </div>
             <div className={`${styles.backgroundWrapper} ${firaSans.className}`}>
                 <h2 className={styles.title}>

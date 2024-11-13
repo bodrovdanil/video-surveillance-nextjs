@@ -7,13 +7,16 @@
 }
 
 .iconSpan {
-    @apply absolute start-0 bottom-3;
+    @apply absolute;
 }
 
 .inputField {
     @apply block py-2.5 ps-6 w-full text-sm text-silver bg-transparent border-b-2 border-silver dark:text-blackbirds-egg dark:border-silver dark:focus:border-blackbirds-egg focus:outline-none;
 }
 
+.inputField2 {
+    @apply  py-3 w-full bg-white/20 placeholder:text-silver text-blackbirds-egg text-[16px] rounded-[60px] pl-[53px] focus:outline-none;
+}
 .iconSize {
     @apply w-5 h-5;
 }

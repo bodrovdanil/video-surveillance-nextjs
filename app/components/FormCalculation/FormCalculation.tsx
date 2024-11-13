@@ -1,33 +1,41 @@
 "use client";
 import { useState } from 'react';
 import Image from 'next/image';
-import axios from 'axios';
-import InputPhone from '../InputPhone/InputPhone';
+import InputForm from '../InputForm/InputForm';
 import Button from '../Button/Button';
 import styles from './FormCalculation.module.css';
 
 const FormCalculation = () => {
-    const [phoneNumber, setPhoneNumber] = useState('');
-
-    const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setPhoneNumber(e.target.value);
-    };
+    const [phone, setPhone] = useState<string>('');
+    const [isLoading, setIsLoading] = useState<boolean>(false);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setIsLoading(true);
+
         try {
-            const res = await axios.post('/api/sendNumberToTelegram', {
-                phoneNumber,
+            const response = await fetch('/api/sendToTelegram', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, phone }),
             });
 
-            if (res.data.success) {
+            const data = await response.json();
+            if (response.ok) {
                 alert('Ваш запрос отправлен!');
             } else {
-                alert('Ошибка при отправке данных.');
+                alert(`Ошибка: ${data.error}`);
             }
-        } catch (error) {
-            console.error('Ошибка:', error);
-            alert('Что-то пошло не так.');
+        } catch (error: unknown) {
+            if (error instanceof Error) {
+                alert(`Произошла ошибка при отправке: ${error.message}`);
+            } else {
+                alert('Произошла ошибка при отправке.');
+            }
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -43,14 +51,21 @@ const FormCalculation = () => {
                             Проект и просчет системы Видеонаблюдения для Вашего Бизнеса <span className="font-extrabold text-[24px] uppercase">бесплатно!</span>
                         </p>
                     </div>
-                    <div className={styles.phoneInput}>
-                        <InputPhone value={phoneNumber} onChange={handlePhoneChange} />
-                    </div>
-                    <div className={styles.buttonWrapper}>
-                        <Button variant="filled" uppercase={false} onClick={handleSubmit}>
-                            Получить расчет
-                        </Button>
-                    </div>
+                    <form onSubmit={handleSubmit} className='flex'>
+                        <div className={styles.phoneInput}>
+                            <InputForm
+                                inputType="phone"
+                                value={phone}
+                                onChange={(e) => setPhone(e.target.value)}
+                                styleType="alternate"
+                            />
+                        </div>
+                        <div className={styles.buttonWrapper}>
+                            <Button variant="filled" uppercase={false} disabled={isLoading}>
+                                {isLoading ? 'Отправляется...' : 'Получить просчет'}
+                            </Button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

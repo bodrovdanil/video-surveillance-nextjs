@@ -1,5 +1,5 @@
 .footerContainer {
-    @apply bg-gradient-to-b from-[#0C0823] to-[#130C35] w-full text-white flex flex-col items-center;
+    @apply bg-gradient-to-b from-[#0C0823] to-[#130C35] w-full text-white flex flex-col items-center uppercase;
 }
 
 .footerInnerContainer {
@@ -11,19 +11,19 @@
 }
 
 .slogan {
-    @apply text-[16px] md:text-[22px] xl:text-[26px] font-normal uppercase text-center md:text-left;
+    @apply text-[16px] md:text-[22px] xl:text-[26px] font-normal text-center md:text-left;
 }
 
 .footerContent {
-    @apply flex flex-col md:flex-row justify-between items-center max-w-[1040px] w-[95%] gap-4 pt-[2vw] pb-[2.3958vw] text-center md:text-left;
+    @apply flex flex-col md:flex-row justify-between items-center max-w-[1040px] w-[95%] gap-4 pt-[2vw] pb-[2.3958vw] text-center md:text-left text-[14px];
 }
 
 .iconTextContainer {
-    @apply text-[14px] relative flex items-start gap-2;
+    @apply relative flex items-start gap-2;
 }
 
 .icon {
-    @apply w-5 h-5;
+    @apply w-[14px] h-[14px] absolute top-[4px] -left-[20px];
 }
 
 .link {
@@ -31,5 +31,5 @@
 }
 
 .contactInfo {
-    @apply flex flex-col items-start gap-1 text-[14px];
+    @apply flex flex-col items-start gap-1   ;
 }

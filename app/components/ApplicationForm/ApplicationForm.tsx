@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
 import Button from '../Button/Button';
-import InputApplicationForm from '../InputApplicationForm/InputApplicationForm';
+import InputForm from '../InputForm/InputForm';
 import styles from './ApplicationForm.module.css';
 
 const ApplicationForm = () => {
@@ -50,12 +50,12 @@ const ApplicationForm = () => {
                 </p>
                 <form onSubmit={handleSubmit} id="application-form">
                     <div className={styles.inputWrapper}>
-                        <InputApplicationForm
+                        <InputForm
                             inputType="name"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                         />
-                        <InputApplicationForm
+                        <InputForm
                             inputType="phone"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
@@ -63,7 +63,7 @@ const ApplicationForm = () => {
                     </div>
                     <div className={styles.buttonWrapper}>
                         <Button variant="filled" disabled={isLoading}>
-                            {isLoading ? 'Отправляется...' : 'Получить расчет'}
+                            {isLoading ? 'Отправляется...' : 'отправить'}
                         </Button>
                     </div>
                 </form>

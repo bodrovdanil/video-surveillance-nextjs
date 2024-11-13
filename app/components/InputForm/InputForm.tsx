@@ -1,22 +1,27 @@
 "use client";
 import InputMask from 'react-input-mask-next';
 import Image from 'next/image';
-import styles from './InputApplicationForm.module.css';
+import styles from './InputForm.module.css';
 
 type InputType = 'phone' | 'name';
+type StyleType = 'default' | 'alternate';
 
 interface InputApplicationFormProps {
     inputType: InputType;
     value: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    styleType?: StyleType;
 }
 
-const InputApplicationForm = ({ inputType, value, onChange }: InputApplicationFormProps) => {
+const InputForm = ({ inputType, value, onChange, styleType = 'default' }: InputApplicationFormProps) => {
+
+    const inputClass = styleType === 'alternate' ? styles.inputField2 : styles.inputField;
+    const spanClass = styleType === 'alternate' ? 'start-5 bottom-4' : 'start-0 bottom-3';
 
     const inputProps = {
         value,
         onChange,
-        className: styles.inputField,
+        className: inputClass,
         id: inputType === 'phone' ? 'userPhone' : 'userName',
         name: inputType === 'phone' ? 'userPhone' : 'userName',
         placeholder: inputType === 'phone' ? "Ваш номер телефона" : "Ваше имя",
@@ -28,7 +33,7 @@ const InputApplicationForm = ({ inputType, value, onChange }: InputApplicationFo
         <div>
             <div className={styles.formContainer}>
                 <div className={styles.inputWrapper}>
-                    <span className={styles.iconSpan}>
+                    <span className={`${styles.iconSpan} ${spanClass}`}>
                         <Image
                             src={inputType === 'phone' ? './images/icon/telephone.svg' : './images/icon/user.svg'}
                             alt={inputType === 'phone' ? 'telephone' : 'username'}
@@ -48,4 +53,4 @@ const InputApplicationForm = ({ inputType, value, onChange }: InputApplicationFo
     );
 };
 
-export default InputApplicationForm;
+export default InputForm;

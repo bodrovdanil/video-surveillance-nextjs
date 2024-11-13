@@ -13,10 +13,10 @@ const SecurityCamerasMobile = () => {
     return (
         <div className={styles.container}>
             <div className="relative">
-                <Image src="/images/GroupHexagonLeft.png" alt="Hexagon" width={426} height={844} className={styles.image1} />
-                <Image src="/images/GroupHexagonRight.png" alt="Hexagon" width={434} height={722} className={styles.image2} />
-                <Image src="/images/HexagonLeft.png" alt="Hexagon" width={64} height={112} className={styles.image3} />
-                <Image src="/images/HexagonRight.png" alt="Hexagon" width={170} height={132} className={styles.image4} />
+                <Image src="/images/GroupHexagonLeft.png" alt="Hexagon" width={362} height={1235} className={styles.image1} />
+                <Image src="/images/GroupHexagonRight.png" alt="Hexagon" width={434} height={1235} className={styles.image2} />
+                <Image src="/images/HexagonLeft.png" alt="Hexagon" width={95} height={125} className={styles.image3} />
+                <Image src="/images/HexagonRight.png" alt="Hexagon" width={101} height={133} className={styles.image4} />
             </div>
             <h2 className={styles.title}>камеры <span className='font-extrabold'>видеонаблюдения</span></h2>
             <div className={styles.flexWrapper}>

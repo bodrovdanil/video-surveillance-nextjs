@@ -10,7 +10,7 @@ type IconTextProps = {
 
 const IconText = ({ src, alt, children, href }: IconTextProps) => (
     <div className={styles.iconTextContainer}>
-        <Image src={src} alt={alt} width={20} height={20} className={styles.icon} />
+        <Image src={src} alt={alt} width={14} height={14} className={styles.icon} />
         {href ? (
             <a href={href} target="_blank" rel="noopener noreferrer" className={styles.link}>
                 {children}
