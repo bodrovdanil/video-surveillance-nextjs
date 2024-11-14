@@ -11,6 +11,12 @@ const ApplicationForm = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+       
+        if (phone.includes('_')) {
+            alert('Пожалуйста, введите полный номер телефона.');
+            return;
+        }
+
         setIsLoading(true);
 
         try {

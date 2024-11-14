@@ -1,5 +1,5 @@
 .formContainer {
-    @apply max-w-xs mx-[1vw];
+    @apply mx-[10px] xl:mx-[20px];
 }
 
 .inputWrapper {

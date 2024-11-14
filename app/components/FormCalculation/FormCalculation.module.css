@@ -15,7 +15,7 @@
 }
 
 .content {
-    @apply flex items-center justify-start absolute left-[3.5vw];
+    @apply flex items-center justify-start absolute left-[25px] xl:left-[50px];
 }
 
 .dot {
@@ -35,5 +35,5 @@
 }
 
 .buttonWrapper {
-    @apply ml-[21px] my-12  normal-case;
+    @apply  my-12  normal-case;
 }

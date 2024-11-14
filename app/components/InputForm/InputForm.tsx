@@ -15,6 +15,7 @@ interface InputApplicationFormProps {
 
 const InputForm = ({ inputType, value, onChange, styleType = 'default' }: InputApplicationFormProps) => {
 
+    const containerClass = styleType === 'alternate' ? 'w-[290px] xl:w-[373px]' : 'w-[290px]';
     const inputClass = styleType === 'alternate' ? styles.inputField2 : styles.inputField;
     const spanClass = styleType === 'alternate' ? 'start-5 bottom-4' : 'start-0 bottom-3';
 
@@ -31,7 +32,7 @@ const InputForm = ({ inputType, value, onChange, styleType = 'default' }: InputA
 
     return (
         <div>
-            <div className={styles.formContainer}>
+            <div className={`${styles.formContainer} ${containerClass}`}>
                 <div className={styles.inputWrapper}>
                     <span className={`${styles.iconSpan} ${spanClass}`}>
                         <Image
