@@ -31,6 +31,7 @@ const FormCalculation = () => {
             const data = await response.json();
             if (response.ok) {
                 alert('Ваш запрос отправлен!');
+                setPhone('');
             } else {
                 alert(`Ошибка: ${data.error}`);
             }

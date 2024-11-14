@@ -31,6 +31,8 @@ const ApplicationForm = () => {
             const data = await response.json();
             if (response.ok) {
                 alert('Ваш запрос отправлен!');
+                setPhone('');
+                setName('');
             } else {
                 alert(`Ошибка: ${data.error}`);
             }
