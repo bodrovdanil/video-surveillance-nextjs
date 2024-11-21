@@ -25,11 +25,11 @@
 }
 
 .circleIconsWrapper {
-    @apply hidden lg:flex justify-between w-[936px] mx-[102px] mb-[19px];
+    @apply hidden lg:flex flex-row-reverse justify-between w-[936px] mx-[102px] mb-[19px];
 }
 
 .circlesWrapper {
-    @apply relative z-10 flex justify-between drop-shadow-md mb-[19px] w-[1140px] px-[102px];
+    @apply relative z-10 flex flex-row-reverse justify-between drop-shadow-md mb-[19px] w-[1140px] px-[102px];
 }
 
 .divider {
@@ -37,5 +37,5 @@
 }
 
 .tooltipsWrapper {
-    @apply relative flex justify-between drop-shadow-md w-[1140px] mb-[75px];
+    @apply relative flex flex-row-reverse justify-between drop-shadow-md w-[1140px] mb-[75px];
 }

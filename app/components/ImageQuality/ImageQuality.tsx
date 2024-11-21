@@ -15,7 +15,7 @@ const firaSans = Fira_Sans({
 });
 
 const ImageQuality = () => {
-    const [activeId, setActiveId] = useState(1);
+    const [activeId, setActiveId] = useState(4);
 
     const handleClick = (id: number) => {
         setActiveId(id);
